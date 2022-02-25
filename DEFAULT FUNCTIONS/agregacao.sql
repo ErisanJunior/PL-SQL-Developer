@@ -21,7 +21,7 @@ SELECT a.cod_UF,b.sigla_uf,AVG(a.POPULACAO) media
 	FROM senso a
 inner join uf b
 on a.cod_UF=b.cod_uf
-WHERE a.ano='2014'
+WHERE a.ano='2013'
 GROUP BY a.cod_UF,b.sigla_uf
 ORDER BY 3 desc;
 
